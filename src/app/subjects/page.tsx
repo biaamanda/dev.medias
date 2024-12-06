@@ -1,10 +1,10 @@
 import { Separator } from "@/components/ui/separator";
 import { getAllSubjects } from "@/lib/subjects";
-import { sleep } from "@/lib/utils";
 import { Subject } from "@/types/subjects";
 import { Fragment } from "react";
 import { SearchAndFilter } from "./_components/search-and-filter";
 import { SubjectCard } from "./_components/subject-card";
+import { sleep } from "@/lib/utils";
 
 interface SubjectsPageProps {
   searchParams: { search?: string; courses?: string };
@@ -14,8 +14,6 @@ export default async function SubjectsPage({
   searchParams,
 }: SubjectsPageProps) {
   const subjectsData = await getAllSubjects();
-  await sleep(1000);
-
   const subjectsArray = Object.values(subjectsData);
 
   const selectedCourses = searchParams.courses
@@ -37,9 +35,9 @@ export default async function SubjectsPage({
 
   return (
     <>
-      <aside className="flex flex-col gap-8 md:max-w-80 flex-1 h-fit sticky top-[calc(4rem+2rem)]">
-        <header className="flex flex-col gap-1">
-          <h1 className="text-primary font-bold text-3xl">
+      <aside className="flex flex-col gap-8 md:max-w-80 md:flex-1 h-fit md:sticky md:top-[calc(4rem+2rem)] bg-background">
+        <header className="flex flex-col gap-1 md:py-0 pt-4">
+          <h1 className="text-primary font-bold text-4xl md:text-3xl">
             Matérias{" "}
             <span className="font-normal text-base text-muted-foreground">
               ({filteredSubjects.length})

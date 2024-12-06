@@ -60,7 +60,7 @@ export function SearchAndFilter({ subjects }: { subjects: Subject[] }) {
   };
 
   return (
-    <div className="hidden flex-col gap-6 md:flex">
+    <div className="flex-col gap-6 flex">
       <div className="flex flex-col gap-2">
         <header className="flex flex-col">
           <h2 className="text-accent-foreground font-medium text-lg">Buscar</h2>
@@ -78,7 +78,7 @@ export function SearchAndFilter({ subjects }: { subjects: Subject[] }) {
         />
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="md:flex flex-col gap-6 hidden">
         <header className="flex flex-col">
           <h2 className="text-accent-foreground font-medium text-lg">Curso</h2>
           <span className="text-sm text-muted-foreground">
