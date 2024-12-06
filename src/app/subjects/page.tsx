@@ -4,7 +4,6 @@ import { Subject } from "@/types/subjects";
 import { Fragment } from "react";
 import { SearchAndFilter } from "./_components/search-and-filter";
 import { SubjectCard } from "./_components/subject-card";
-import { sleep } from "@/lib/utils";
 
 interface SubjectsPageProps {
   searchParams: { search?: string; courses?: string };
