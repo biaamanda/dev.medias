@@ -1,9 +1,9 @@
 import { Separator } from "@/components/ui/separator";
-import { getAllSubjects } from "@/lib/subjects";
 import { Subject } from "@/types/subjects";
 import { Fragment } from "react";
 import { SearchAndFilter } from "./_components/search-and-filter";
 import { SubjectCard } from "./_components/subject-card";
+import { SUBJECTS } from "@/data/subjects";
 
 interface SubjectsPageProps {
   searchParams: { search?: string; courses?: string };
@@ -12,7 +12,7 @@ interface SubjectsPageProps {
 export default async function SubjectsPage({
   searchParams,
 }: SubjectsPageProps) {
-  const subjectsData = await getAllSubjects();
+  const subjectsData = SUBJECTS;
   const subjectsArray = Object.values(subjectsData);
 
   const selectedCourses = searchParams.courses

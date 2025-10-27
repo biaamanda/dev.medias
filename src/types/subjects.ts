@@ -7,7 +7,6 @@ export interface Subject {
   assignmentWeight: number;
   exams: { name: string; weight: number }[];
   assignments: { name: string; weight: number }[];
-  courses: { [key: string]: number };
 }
 
 export interface Subjects {
