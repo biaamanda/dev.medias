@@ -5612,10 +5612,9 @@ export const SUBJECTS: Subjects = {
       { name: "P2", weight: 0.6 },
     ],
     assignments: [
-      { name: "T1", weight: 0.3 },
-      { name: "T2", weight: 0.3 },
-      { name: "T3", weight: 0.2 },
-      { name: "T4", weight: 0.2 },
+      { name: "T1", weight: 0.3333333333 },
+      { name: "T2", weight: 0.3333333333 },
+      { name: "T3", weight: 0.3333333333 },
     ],
   },
   ETE803: {
