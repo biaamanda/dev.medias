@@ -3334,8 +3334,8 @@ export const SUBJECTS: Subjects = {
     name: "Mecânica Geral",
     code: "EFB204",
     period: "A",
-    examWeight: 60.0,
-    assignmentWeight: 40.0,
+    examWeight: 70.0,
+    assignmentWeight: 30.0,
     exams: [
       { name: "P1", weight: 0.4 },
       { name: "P2", weight: 0.6 },
