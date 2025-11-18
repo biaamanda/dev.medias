@@ -3280,8 +3280,8 @@ export const SUBJECTS: Subjects = {
     name: "Cálculo Diferencial e Integral II",
     code: "EFB109",
     period: "A",
-    examWeight: 60.0,
-    assignmentWeight: 40.0,
+    examWeight: 80.0,
+    assignmentWeight: 20.0,
     exams: [
       { name: "P1", weight: 0.2 },
       { name: "P2", weight: 0.2 },
